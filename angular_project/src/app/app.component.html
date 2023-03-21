@@ -1,0 +1,20 @@
+<p>{{title}}</p>
+
+<p>Custom Pipe: {{5 | customePipe:2}}</p>
+
+
+
+<p>testing</p>
+<app-testing></app-testing>
+
+<p>component</p>
+<mat-form-field appearance="fill">
+    <mat-label>
+        Pick a Date
+    </mat-label>
+    <input matInput [matDatepicker]="picker" name="date" ngModel>
+    <mat-hint>DD/MM/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
